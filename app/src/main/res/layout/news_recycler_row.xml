@@ -1,48 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="12dp"
-    android:elevation="4dp">
+    app:cardBackgroundColor="@color/card_background"
+    app:cardElevation="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:padding="4dp"
-        android:gravity="center_vertical">
+        android:padding="4dp">
 
         <ImageView
+            android:id="@+id/article_image_view"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:scaleType="centerCrop"
-            android:id="@+id/artcle_image_view"/>
+            android:contentDescription="@string/cd_article_image"
+            android:scaleType="centerCrop" />
+
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/article_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:textColor="@color/black"
-                android:textStyle="italic"
-                android:maxLines="3"
-                android:text="This is the Title"
                 android:layout_marginBottom="8dp"
-                android:id="@+id/article_title"/>
+                android:maxLines="3"
+                android:text="Title"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
+                android:id="@+id/article_source"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
+                android:layout_marginBottom="8dp"
                 android:text="source"
-                android:layout_marginBottom="8dp"/>
-
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
 
         </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/share_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_share_article"
+            android:src="@drawable/ic_share" />
+
+        <ImageButton
+            android:id="@+id/bookmark_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_bookmark_article"
+            android:src="@drawable/ic_bookmark_outline" />
+
     </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

@@ -1,3 +1,50 @@
 <resources>
     <string name="app_name">NewsBite</string>
+    
+    <!-- Categories -->
+    <string name="category_general">General</string>
+    <string name="category_business">Business</string>
+    <string name="category_sports">Sports</string>
+    <string name="category_technology">Technology</string>
+    <string name="category_health">Health</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_science">Science</string>
+    
+    <!-- Actions -->
+    <string name="action_search">Search News</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_share">Share</string>
+    <string name="action_bookmark">Bookmark</string>
+    <string name="action_remove_bookmark">Remove Bookmark</string>
+    
+    <!-- Messages -->
+    <string name="msg_bookmark_updated">Bookmark updated</string>
+    <string name="msg_no_articles">No articles found</string>
+    <string name="msg_error_generic">Something went wrong</string>
+    <string name="msg_error_network">No internet connection</string>
+    <string name="msg_error_offline">No internet connection and no cached data available</string>
+    <string name="msg_loading">Loading…</string>
+    
+    <!-- Bookmarks -->
+    <string name="bookmarks_title">Bookmarks</string>
+    <string name="bookmarks_empty">No bookmarks yet</string>
+    <string name="bookmarks_empty_subtitle">Articles you bookmark will appear here</string>
+    
+    <!-- Accessibility -->
+    <string name="cd_article_image">Article image</string>
+    <string name="cd_bookmark_article">Bookmark article</string>
+    <string name="cd_share_article">Share article</string>
+    <string name="cd_view_bookmarks">View bookmarks</string>
+    <string name="cd_toggle_dark_mode">Toggle dark mode</string>
+    <string name="cd_go_back">Go back</string>
+    <string name="cd_remove_bookmark">Remove bookmark</string>
+    <string name="cd_ai_summary">AI Summary</string>
+    <string name="cd_expand_collapse">Expand or collapse</string>
+    
+    <!-- AI Summary -->
+    <string name="ai_summary_title">AI Summary</string>
+    <string name="action_summarize">Summarize with AI</string>
+    <string name="msg_summarizing">Generating summary…</string>
+    <string name="msg_summary_error">Could not generate summary. Please try again.</string>
+    <string name="msg_summary_no_api_key">AI summarization requires a Gemini API key</string>
 </resources>

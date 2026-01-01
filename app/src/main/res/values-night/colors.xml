@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Primary colors -->
+    <color name="my_primary">#29B6F6</color>
+    <color name="my_primary_dark">#03A9F4</color>
+    <color name="my_secondary">#1E1E1E</color>
+    
+    <!-- Background colors -->
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="card_background">#1E1E1E</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0B0</color>
+    
+    <!-- Shimmer -->
+    <color name="shimmer_bg">#2A2A2A</color>
+    
+    <!-- Divider -->
+    <color name="divider">#2A2A2A</color>
+</resources>
